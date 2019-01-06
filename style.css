@@ -1,0 +1,329 @@
+/* TRANSLATION INTO ENGLISH */
+
+/* RESET */
+
+*{
+	font-family: questrial, sans-serif;
+	letter-spacing: 1;
+	line-height: 1.6;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+@media all and (max-width:400px) {
+	a{
+		font-size: small;
+	}
+	h3 a{
+		font-size: x-small;
+	}
+}
+
+
+
+/* GENERAL STYLING */
+
+h1{
+	padding: 0 0 .5em 0;
+}
+h2, h3, h4, p, ul, li{
+	padding: 0 0 1em 0; 
+}
+
+/* white */
+.color1{
+	background-color: #ffffff;
+}
+/* blue */
+.color2{
+	background-color: #afeeee;
+}
+/* tomato */
+.color3{
+	background-color: #ff6347;
+}
+/* rose */
+.color4{
+	background-color: #fff0ee;
+} 
+/* wine */
+.color5{
+	background-color: #e75a40;
+}
+
+
+/* NAVIGATION */
+
+nav{	
+	position: fixed;
+	border-bottom: 4px solid #ffffff;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a{
+	flex: 1 1 20%;
+	padding-bottom: 7px;
+	color: #000000;
+	font-size: 11px;
+	letter-spacing: 5px;
+}
+.logo{
+	text-align: center;
+}
+.logo span{
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 2px;	
+}
+.menu-item{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+nav a:hover{
+	background-color: #afeeee;
+}
+
+@media all and (max-width: 1000px){
+	nav{
+		flex-wrap: wrap;
+	}
+	.logo{
+		flex: 1 1 100%;
+	}
+	.menu-item{
+		flex: 1 1 25%;
+		background-color: #ff6347;
+	}
+}
+@media all and (max-width: 400px){
+	.menu-item{
+		flex: 1 1 50%;
+	}
+}
+
+
+/* MAIN LAYOUT */
+
+/* full display */
+body{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper{
+	display: flex;
+}
+.sidebar{
+	flex: 0 0 20%;
+}
+.main{
+	flex: 0 0 800px;
+	padding: 5em 2em 6em 2em;
+}
+.overflow{
+	flex: 5 5 20%;
+}
+
+/* tablet */
+@media all and (max-width: 1000px){
+	.sidebar{
+		display: none;
+	}
+	.main{
+		flex: 1 1 100%;
+	}
+	.overflow{
+		display: none;
+	}
+}
+
+/* mobile */
+@media all and (max-width: 600px){
+	.main{
+		padding: 5em 1em 6em 1em;
+	}
+}
+
+
+
+/* INTERIOR LAYOUT */
+
+/* full display */
+.text{
+	padding: 1em 2em 1em 2em;
+}
+.sub, .sub-contact, .sub-small{
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+}
+.sub-half{
+	flex: 1 1 45%;
+}
+.sub-quarter{
+	flex: 1 1 20%;
+}
+.buffer{
+	flex: 1 5 1em;
+}
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* tablet */
+@media all and (max-width: 800px){
+	.sub {
+		flex-direction: column;
+	}
+}
+
+/* mobile */
+@media all and (max-width: 600px){
+	.sub-contact, .sub-small {
+		flex-direction: column;
+	}
+	.sub-half p, ul{
+		font-size: small;
+	}
+	.sub-quarter p{
+		font-size: small;
+	}
+	.qualifications p {
+		font-size: small;
+	}
+	.text{
+		padding: 1em;
+	}
+}
+
+
+
+/* CONTENT */
+
+div a:hover{
+	color: #ff6347;
+}
+
+/* icon images */
+.icon{
+	height: 4em;
+	width: 4em;
+	margin: 1em;
+}
+
+/* contact */
+.inline>*{
+	display: inline;
+}
+.envelope-image{
+	width: 12em;
+	height: 12em;
+	padding: 2em;
+}
+
+/* quality guarantee */
+.qualifications p{
+	display: flex;
+	align-items: center;
+	font-style: italic;
+}
+
+/* services */
+#services ul{
+	list-style-type: square;
+}
+
+/* why freelance checklist */
+.checkmark-image{
+	width: 3em;
+	height: 3em;
+	margin: 1em;
+}
+.checklist{
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.checklist div{
+	display: flex;
+	align-items: center;
+}
+.checklist h3{
+	padding: 0;
+}
+
+
+/* collaborate */
+.profile{
+	width: 100%;
+}
+.profile-image{
+	width:20em;
+	height: 20em;
+	margin: 1em 0 2em 0;
+}
+@media all and (max-width: 800px){
+	.profile{
+		text-align: center;
+	}
+}
+@media all and (max-width: 400px){
+	.profile-image{
+		width: 15em;
+		height: 15em;
+	}
+}
+
+/* FOOTER */
+
+footer{
+	color: #e75a40;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3em 0 3em 0;
+}
+footer a{
+	color: #e75a40;
+}
+footer .wrapper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+footer .icon{
+	height: 4em;
+	width: 4em;
+	margin: 4em;
+}
+
+@media all and (max-width: 800px){
+	footer .icon{
+		margin: 2em;
+	}
+}
+
+@media all and (max-width: 400px){
+	footer .icon{
+		width: 3em;
+		height: 3em;
+		margin: 1em;
+	}
+}
+
